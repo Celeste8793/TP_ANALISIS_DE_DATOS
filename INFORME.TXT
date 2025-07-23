@@ -1,0 +1,55 @@
+INFORME DE ANÁLISIS: BIENESTAR Y FELICIDAD
+
+1. OBJETIVO GENERAL
+-------------------
+Analizar cómo distintos hábitos de vida (como el sueño, el ejercicio físico y el uso de pantallas) afectan el bienestar general y la percepción de felicidad de los individuos encuestados.
+
+2. PROCESO DE ANÁLISIS
+-----------------------
+
+2.1 LIMPIEZA DE DATOS
+- Se eliminaron registros con valores nulos en variables clave como edad, horas de sueño, días de ejercicio y nivel de felicidad.
+- Se descartaron valores negativos en el tiempo frente a pantallas.
+
+2.2 CREACIÓN DE VARIABLES DERIVADAS
+- Se construyó el ratio screen/sleep: tiempo frente a pantallas dividido por horas de sueño.
+- Se diseñó un índice de hábitos saludables (0 a 3) considerando si:
+  * Duerme al menos 7 horas.
+  * Realiza ejercicio 3 o más días por semana.
+  * Tiene un tiempo frente a pantallas menor o igual a 6 horas.
+- Se identificó un “grupo de riesgo” con tres factores:
+  * Pantalla > 8h/día.
+  * Sueño < 6h/día.
+  * Estrés alto (>= 8).
+
+2.3 ANÁLISIS UNIVARIADO Y BIVARIADO
+- Se observaron distribuciones de edad, sueño, ejercicio, felicidad y estrés.
+- Se realizó una matriz de correlaciones:
+  * Alta correlación negativa entre estrés y felicidad.
+  * Relación positiva entre sueño y felicidad.
+- Se analizaron cruces entre sueño y felicidad (dispersión), y comparaciones de felicidad por género y país (gráficos de cajas y barras).
+
+3. HALLAZGOS RELEVANTES
+------------------------
+
+- El nivel de felicidad se incrementa con mayores horas de sueño.
+- El estrés reduce considerablemente la percepción de bienestar.
+- El uso excesivo de pantallas combinado con poco descanso y alto estrés permite identificar una población vulnerable.
+- Las mujeres mostraron, en promedio, menor felicidad autodeclarada.
+- Existen diferencias importantes en la felicidad según el país.
+
+4. EXPORTACIONES REALIZADAS
+----------------------------
+
+- Datos limpios y transformados: encuesta_bienestar_limpio.csv
+- Gráficos y visualizaciones descriptivas.
+- Informe técnico generado automáticamente.
+- Indicadores derivados listos para visualización en Power BI.
+
+5. RECOMENDACIONES
+------------------
+
+- Promover hábitos de sueño adecuados (7-9h).
+- Fomentar ejercicio regular.
+- Establecer límites en el uso de pantallas.
+- Implementar acciones focalizadas para personas en grupo de riesgo.
